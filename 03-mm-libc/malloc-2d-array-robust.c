@@ -9,13 +9,18 @@ int main(int argc, char **argv) {
     if (array == NULL)
         return -1;
 
-    // not very robust, what happens if one of the calls to malloc below fail?
-    // the program exits but leaks memory! See malloc-2d-array-robust.c for
-    // a cleaner solution
     for (int i=0; i<a; i++) {
         array[i] = malloc(b * sizeof(int));
-        if (array[i] == NULL)
+
+        if (array[i] == NULL) {
+
+            // free everything that was allocated so far
+            for(int j=0; j<i; j++)
+                free(array[j]);
+            
+            free(array);
             return -1;
+        }
     }
 
     for (int i=0; i<a; i++)

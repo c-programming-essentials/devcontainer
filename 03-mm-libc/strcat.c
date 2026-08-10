@@ -9,8 +9,8 @@ int main(int argc, char **argv) {
     strcpy(s1, "hello ");
     strcpy(s2, "hello ");
 
-    strcat(s1, world);       // not very safe
-    strncat(s2, world, 32);  // better
+    strcat(s1, world);                        // not very safe
+    strncat(s2, world, 32 - strlen(s2) - 1);  // better (-1 is for the termination character)
 
     printf("s1: %s\n", s1);
     printf("s2: %s\n", s2);
