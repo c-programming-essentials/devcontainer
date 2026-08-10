@@ -11,7 +11,7 @@ int main() {
     int y = 0;
     printf("------ do ... while loop:\n");
     do {
-        printf("y is %d\n", x);
+        printf("y is %d\n", y);
         y = y - 1;
     } while (y > 0); // although this condition is always false, body is executed once
 
