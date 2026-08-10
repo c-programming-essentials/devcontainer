@@ -4,7 +4,7 @@
 #define ARRAY_SIZE  100
 
 int fill_array(int *array, int size) {
-    for(int i=0; i<size; i++)
+    for (int i=0; i<size; i++)
         array[i] = rand()%10;
 }
 
@@ -17,9 +17,9 @@ int update_slot(int *array, int slot, int value) {
 int process_array(int *array, int size) {
     int ii = 1000000;
 
-    for(int i=0; i<size; i++) {
+    for (int i=0; i<size; i++) {
         /* If the value is even, change it to 1000000 */
-        if(!(array[i] % 2)) {
+        if (!(array[i] % 2)) {
             update_slot(array, ii, i); // oops, inverted 2nd and 3rd parameter!
         }
     }

@@ -10,9 +10,9 @@ int main(int argc, char **argv) {
     printf("[main] calling init_network()\n");
     init_network();
 
-    while(1) {
+    while (1) {
         printf("[main] calling rcv_request()\n");
-        if(rcv_request(&req) != 0)
+        if (rcv_request(&req) != 0)
             break;
 
         printf("[main] calling parse_req()\n");

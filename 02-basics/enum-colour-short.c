@@ -10,7 +10,7 @@ typedef enum {
 int main(int argc, char **argv) {
     colour c1 = GREEN;
 
-    switch(c1) {
+    switch (c1) {
         case RED:
             printf("c1 is red\n");
             break;

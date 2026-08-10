@@ -15,7 +15,7 @@ int main(int argc, char **argv) {
         if (array[i] == NULL) {
 
             // free everything that was allocated so far
-            for(int j=0; j<i; j++)
+            for (int j=0; j<i; j++)
                 free(array[j]);
             
             free(array);

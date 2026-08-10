@@ -18,7 +18,7 @@ int main(int argc, char **argv) {
     my_struct s __attribute__ ((aligned(64)));
 
     gettimeofday(&start, NULL);
-    for(int i=0; i<N; i++)
+    for (int i=0; i<N; i++)
         memcpy(&s, &array[rand()%N], sizeof(my_struct));
     gettimeofday(&stop, NULL);
 

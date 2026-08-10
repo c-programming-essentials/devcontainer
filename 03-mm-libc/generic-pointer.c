@@ -7,7 +7,7 @@ typedef enum {
 } type_enum;
 
 void print(void *data, type_enum t) {
-    switch(t) {
+    switch (t) {
         case CHAR:
             printf("character: %c\n", *(char *)data);
             break;
