@@ -19,10 +19,10 @@ COPY devcontainer/06-security /root/workspace/code-snippets/06-security
 # follows independently of the cache. Needed as the git repos evolve
 ARG CACHEBUST=1
 
-RUN git clone https://github.com/essential-c/check50.git /tmp/check50
+RUN git clone https://github.com/c-programming-essentials/check50.git /tmp/check50
 RUN cd /tmp/check50 && pip install . --break-system-packages --root-user-action=ignore
 
-RUN git clone https://github.com/essential-c/exercises.git /root/workspace/exercises
-RUN git clone https://github.com/essential-c/exercises-solutions.git /root/workspace/exercises-solutions
+RUN git clone https://github.com/c-programming-essentials/exercises.git /root/workspace/exercises
+RUN git clone https://github.com/c-programming-essentials/exercises-solutions.git /root/workspace/exercises-solutions
 
 WORKDIR /root/workspace

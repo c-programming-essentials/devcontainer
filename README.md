@@ -16,7 +16,7 @@ Because of its seamless compatibility and deployment, it is the prefered method 
 Codespaces is in absolute a paid feature but the free tier suffices to complete the book's exercises and run its code samples.
 If somehow the free tier is not enough, see alternate solutions below.
 
-To deploy a suitable Codespace instance, simply go to the [repository page on GitHub](https://github.com/essential-c/devcontainer), and click on `<> Code` then `Codespaces` and finally click the `+` button:
+To deploy a suitable Codespace instance, simply go to the [repository page on GitHub](https://github.com/c-programming-essentials/devcontainer), and click on `<> Code` then `Codespaces` and finally click the `+` button:
 
 <img width="200" src=".include/launch-codespaces.png">
 
@@ -55,7 +55,7 @@ sudo apt-get update && sudo apt-get install -y build-essential valgrind \
 For the exercises, the book uses its own fork of the `check50` automated code checker, that can be downloaded and installed as follows:
 
 ```
-git clone https://github.com/essential-c/check50.git
+git clone https://github.com/c-programming-essentials/check50.git
 cd check50
 pip install --break-system-packages .
 ```
@@ -71,5 +71,5 @@ From there you can compile the source file and run the resulting program in a co
 
 ## Completing the Book's Programming Exercises
 
-See the instructions given in the book and try to complete the [sample exercise](https://github.com/essential-c/exercises/blob/main/01-intro/01-sample/README.md).
+See the instructions given in the book and try to complete the [sample exercise](https://github.com/c-programming-essentials/exercises/blob/main/01-intro/01-sample/README.md).
 
