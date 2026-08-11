@@ -7,10 +7,10 @@ RUN apt-get update && apt-get install -y build-essential valgrind python3 \
 
 RUN mkdir -p /root/workspace/code-snippets
 
-COPY devcontainer/01-intro /root/code-snippets/workspace/01-intro
-COPY devcontainer/02-basics /root/code-snippets/workspace/02-basics
-COPY devcontainer/03-mm-libc /root/code-snippets/workspace/03-mm-libc
-COPY devcontainer/04-building-debugging /root/code-snippets/workspace/04-building-debugging
+COPY devcontainer/01-intro /root/workspace/code-snippets/01-intro
+COPY devcontainer/02-basics /root/workspace/code-snippets/02-basics
+COPY devcontainer/03-mm-libc /root/workspace/code-snippets/03-mm-libc
+COPY devcontainer/04-building-debugging /root/workspace/code-snippets/04-building-debugging
 COPY devcontainer/05-use-cases /root/workspace/code-snippets/05-use-cases
 COPY devcontainer/06-security /root/workspace/code-snippets/06-security
 
