@@ -1,7 +1,7 @@
-all: prog
+all: server
 
-prog: main.o network.o parser.o
-	gcc main.o network.o parser.o -o prog
+server: main.o network.o parser.o
+	gcc main.o network.o parser.o -o server
 
 network.o: network.c network.h
 	gcc -c network.c -o network.o
@@ -13,4 +13,4 @@ main.o: main.c network.h parser.h
 	gcc -c main.c -o main.o
 
 clean:
-	rm -rf *.o prog
+	rm -rf *.o server
