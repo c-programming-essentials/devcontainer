@@ -23,6 +23,7 @@ RUN git clone https://github.com/c-programming-essentials/check50.git /tmp/check
 RUN cd /tmp/check50 && pip install . --break-system-packages --root-user-action=ignore
 
 RUN git clone https://github.com/c-programming-essentials/exercises.git /root/workspace/exercises
-RUN git clone https://github.com/c-programming-essentials/exercises-solutions.git /root/workspace/exercises-solutions
+COPY exercises-solutions /root/workspace/exercise-solutions
+RUN cd /root/workspace/exercise-solutions && rm -rf .git
 
 WORKDIR /root/workspace
