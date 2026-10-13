@@ -1,0 +1,9 @@
+mach create
+
+machine LoadPlatformDescription @stm32f4.repl
+
+sysbus LoadELF @baremetal.elf
+
+showAnalyzer sysbus.usart2
+
+start
