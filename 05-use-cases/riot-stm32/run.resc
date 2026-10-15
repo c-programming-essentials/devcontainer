@@ -2,7 +2,7 @@ mach create
 
 machine LoadPlatformDescription @stm32f4.repl
 
-sysbus LoadELF @bin/stm32f4discovery/riot-blink.elf
+sysbus LoadELF @bin/stm32f4discovery/riot-button.elf
 
 showAnalyzer sysbus.usart2
 

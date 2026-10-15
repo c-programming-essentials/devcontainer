@@ -12,7 +12,7 @@ static void button_callback(void *arg) {
 }
 
 int main(void) {
-    gpio_init_int(BTN0_PIN, BTN0_MODE, GPIO_RISING, button_callback, NULL);
+    gpio_init_int(BTN0_PIN, BTN0_MODE, GPIO_FALLING, button_callback, NULL);
 
     printf("Application started.\n");
     
@@ -24,7 +24,7 @@ int main(void) {
 
         } else printf("\n");
 
-        ztimer_sleep(ZTIMER_MSEC, 50);
+        ztimer_sleep(ZTIMER_MSEC, 500);
     }
 
     return 0;
