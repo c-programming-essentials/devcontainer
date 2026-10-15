@@ -7,7 +7,7 @@ MEMORY
 }
 
 _estack     = ORIGIN(RAM) + LENGTH(RAM);
-_stack_size = 4K;    /* minimum stack; link fails if .bss + stack exceeds RAM */
+_stack_size = 128;    /* minimum stack; link fails if .bss + stack exceeds RAM */
 
 SECTIONS
 {
