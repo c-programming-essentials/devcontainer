@@ -1,6 +1,6 @@
 APPLICATION = riot-button
 BOARD ?= stm32f4discovery
-RIOTBASE ?= /root/RIOT
+RIOTBASE ?= $(HOME)/RIOT
 
 USEMODULE += stdio_uart
 USEMODULE += periph_gpio_irq
