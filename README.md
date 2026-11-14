@@ -60,6 +60,15 @@ cd check50
 pip install --break-system-packages .
 ```
 
+The use cases also require the Renode emulator and the sources of the RIOT OS:
+
+```
+wget https://github.com/renode/renode/releases/download/v1.16.1/renode_1.16.1_amd64.deb && apt-get install -y ./renode_1.16.1_amd64.deb
+git clone --depth 1 --branch 2026.04 https://github.com/RIOT-OS/RIOT ~/RIOT
+```
+
+The Makefile of the RIOT case study may need to be updated to point to the location of RIOT's sources.
+
 ## Running the Book's Code Samples
 
 The vast majority of the code samples presented in the book have a GitHub logo on the bottom left, followed by the path to a file:
