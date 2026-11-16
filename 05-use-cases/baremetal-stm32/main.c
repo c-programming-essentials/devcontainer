@@ -95,7 +95,7 @@ int main(void) {
 
     while (1) {
         puts("Waiting for button...");
-        if(button_pressed) {
+        if (button_pressed) {
             button_pressed = 0;
             puts(" Button pressed!\n");
 

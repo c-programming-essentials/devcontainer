@@ -19,7 +19,7 @@ int main(int argc, char **argv) {
     unsigned int random_val = 42;
 
     // initialize the array
-    for(int i=0; i<N; i++) {
+    for (int i=0; i<N; i++) {
         array[i].i = i;
         array[i].d = i;
         memset(array[i].c, 'a', sizeof(array[i].c));
@@ -28,7 +28,7 @@ int main(int argc, char **argv) {
     clock_gettime(CLOCK_MONOTONIC, &start);
 
     // the loop we want to speed up
-    for(int i=0; i<N*10; i++) {
+    for (int i=0; i<N*10; i++) {
         random_val = random_val * 1103515245 + 12345;
         memcpy(&s, &array[random_val%N], sizeof(my_struct));
     }

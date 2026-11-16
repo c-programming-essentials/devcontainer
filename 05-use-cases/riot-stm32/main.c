@@ -18,7 +18,7 @@ int main(void) {
     
     while (1) {
         printf("Waiting for button...");
-        if(button_pressed) {
+        if (button_pressed) {
             button_pressed = 0;
             printf(" Button pressed!\n");
 
